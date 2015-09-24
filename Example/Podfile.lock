@@ -1,0 +1,14 @@
+PODS:
+  - WYMaterialButton (0.1.0)
+
+DEPENDENCIES:
+  - WYMaterialButton (from `../`)
+
+EXTERNAL SOURCES:
+  WYMaterialButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WYMaterialButton: 6777a3f5cc97144445bdb63fde88aded6098087d
+
+COCOAPODS: 0.38.2

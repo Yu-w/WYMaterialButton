@@ -1,0 +1,6 @@
+framework module WYMaterialButton {
+  umbrella header "WYMaterialButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
