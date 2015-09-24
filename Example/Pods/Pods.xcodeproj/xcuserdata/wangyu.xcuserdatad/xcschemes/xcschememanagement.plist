@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-WYMaterialButton_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WYMaterialButton_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WYMaterialButton-WYMaterialButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WYMaterialButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>390C12AF9CDF1263069DF264D4670035</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C1BD30AD7A1769E51E347FAE951C2B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>939541507B63A506CF07B1DF18AC5622</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C97E2E820A1719333BB067EC4819AD16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
