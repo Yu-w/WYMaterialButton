@@ -41,9 +41,9 @@ public class WYMaterialButton: DesignableButton {
     @IBInspectable
     public var touchLocationEnable: Bool = true
     @IBInspectable
-    public var materialEffectPercent: CGFloat = 0.8 * 1.25 {
+    public var materialEffectPercent: CGFloat = 0.9 {
         didSet {
-            self.materialEffectPercent = self.materialEffectPercent * 1.25
+            self.materialEffectPercent = self.materialEffectPercent * 1.1
             self.configureMaterialPressedView()
         }
     }
@@ -116,6 +116,7 @@ public class WYMaterialButton: DesignableButton {
         self.materialPressedView.transform = CGAffineTransformMakeScale(0.5, 0.5)
         
         UIView.animateWithDuration(animationDuration, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+                self.materialPressedView.center = self.materialBackgroundView.center
                 self.materialPressedView.transform = CGAffineTransformIdentity
             }, completion: nil)
         
