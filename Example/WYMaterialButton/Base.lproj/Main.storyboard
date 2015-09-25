@@ -28,9 +28,6 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="materialBackgroundColor">
-                                                <color key="value" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
@@ -55,15 +52,15 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                                 <real key="value" value="0.29999999999999999"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="materialColor">
+                                                <color key="value" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-lv-P8q" customClass="WYMaterialButton" customModule="Pods_WYMaterialButton_Example">
                                         <rect key="frame" x="0.0" y="68" width="180" height="44"/>
                                         <state key="normal" title="Button"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="materialBackgroundColor">
-                                                <color key="value" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
@@ -88,6 +85,9 @@
                                                 <real key="value" value="0.40000000000000002"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="materialColor">
+                                                <color key="value" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>

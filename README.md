@@ -46,14 +46,14 @@ If you're Objective-C user, please include the header file
 
 2) Subclass the UIbutton as ``WYMaterialButton`` in identity inspector.
 
-3) Select a color as ``Material Background Color``, the first row in attribute inspector, and let WYMaterialButton do everything else for you. You can do other setting as well.
+3) Select a color as ``Material Color``, the first row in attribute inspector, and let WYMaterialButton do everything else for you. You can do other setting as well.
 ![](./Screenshot/instruction.png)
 
 
 ## Specification
-For most cases, ``Material Background Color`` is the only property you need to set. Leave others as default.
+For most cases, ``Material Color`` is the only property you need to set. Leave others as default.
 
-With ``Auto Setup Color`` enabled defautly, WYMaterialButton would set background of the button same as the ''materialBackgroundColor'', and set the text color to corresponding contrast color for maximing convenience for developers. If you wish the highest customization, just disable ``Auto Setup Color`` and set up the button as usual and won't hurt material effects.
+With ``Auto Setup Color`` enabled defautly, WYMaterialButton would set background of the button same as the ''materialColor'', and set the text color to corresponding contrast color for maximing convenience for developers. If you wish the highest customization, just disable ``Auto Setup Color`` and set up the button as usual and won't hurt material effects.
 
 With ``Touch Location Enable`` enabled defautly, WYMaterialButton would track your touch location and generate a ripple animation upon that. You can disable to center the ripple effect on the button.
 
@@ -61,7 +61,7 @@ With ``Touch Location Enable`` enabled defautly, WYMaterialButton would track yo
 
 You can of course access all these properties and more by using codes. For example:
 ```swift
-myButton.materialBackgroundColor = UIColor.blueColor()
+myButton.materialColor = UIColor.blueColor()
 ```
 
 
