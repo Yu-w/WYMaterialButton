@@ -77,20 +77,21 @@ public class WYMaterialButton: DesignableButton {
     public override func layoutSubviews() {
         super.layoutSubviews()
         
-        let previousCenter = self.materialPressedView.center
+        let trackingCenter = self.materialPressedView.center
         self.configureMaterialPressedView()
         
-        self.materialPressedView.center = previousCenter
+        self.materialPressedView.center = self.touchLocationEnable ? trackingCenter : self.materialPressedView.center
         self.materialBackgroundView.layer.frame = self.bounds
         
         let buttonMask = CAShapeLayer()
-        buttonMask.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).CGPath
+        buttonMask.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.cornerRadius).CGPath
         self.materialBackgroundView.layer.mask = buttonMask
     }
     
     private func configure() {
         self.configureMaterialPressedView()
         self.configureMaterialBackgroundView()
+        self.materialBackgroundView.alpha = 0
     }
     
     let materialPressedView = UIView()
@@ -107,14 +108,11 @@ public class WYMaterialButton: DesignableButton {
         self.materialBackgroundView.frame = self.bounds
         self.layer.addSublayer(materialBackgroundView.layer)
         self.materialBackgroundView.layer.addSublayer(self.materialPressedView.layer)
-        self.materialBackgroundView.alpha = 0
     }
     
     public override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
         self.materialBackgroundView.alpha = 1
-        if self.touchLocationEnable == true {
-            self.materialPressedView.center = touch.locationInView(self)
-        }
+        self.materialPressedView.center = touch.locationInView(self)
         self.materialPressedView.transform = CGAffineTransformMakeScale(0.5, 0.5)
         
         UIView.animateWithDuration(animationDuration, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in

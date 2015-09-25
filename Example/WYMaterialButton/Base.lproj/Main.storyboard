@@ -122,6 +122,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="materialBackgroundColor">
                                         <color key="value" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="touchLocationEnable" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
