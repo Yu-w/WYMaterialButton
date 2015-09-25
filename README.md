@@ -45,10 +45,9 @@ If you're Objective-C user, please include the header file
 1) Add a ``UIButton`` in the Storyboard of your project.
 
 2) Subclass this UIbutton as ``WYMaterialButton`` in identity inspector.
-![](./Screenshot/instruction.png)
 
 3) Select a color in attribute inspector, and let WYMaterialButton do everything else for you.
-
+![](./Screenshot/instruction.png)
 
 ## Demo
 1) Download the repository
