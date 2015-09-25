@@ -68,7 +68,6 @@
 		7E3D3D7B50E4EB08316614418B49C730 /* Pods-WYMaterialButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WYMaterialButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		811AE3A347F0FF13D0DAD9B909BF4BC1 /* Pods-WYMaterialButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYMaterialButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		831E73430F13747EADFB5D84A1B1AEB0 /* Pods-WYMaterialButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WYMaterialButton_Tests.modulemap"; sourceTree = "<group>"; };
-		88E6DAC11BB4DE9500FFA05B /* WYMaterialButton-WYMaterialButton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYMaterialButton-WYMaterialButton-Bridging-Header.h"; sourceTree = "<group>"; };
 		88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYMaterialButton.swift; sourceTree = "<group>"; };
 		8E74C3AAB6EBB8621915AEF306744897 /* WYMaterialButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WYMaterialButton-Private.xcconfig"; sourceTree = "<group>"; };
 		93BCCECCC6476BCEEC7C0336FF8B3399 /* WYMaterialButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYMaterialButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */,
-				88E6DAC11BB4DE9500FFA05B /* WYMaterialButton-WYMaterialButton-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

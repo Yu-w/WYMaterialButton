@@ -66,13 +66,25 @@ public class WYMaterialButton: UIButton {
     }
     
     private func configure() {
-        configureMaterialView()
-        configureMaterialBackgroundView()
+        self.configureMaterialView()
+        self.configureMaterialBackgroundView()
         
         self.layer.shadowRadius = 0
         self.layer.shadowOffset = CGSize(width: 0, height: 1)
         self.layer.shadowColor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.5).CGColor
     }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let previousCenter = self.materialView.center
+        self.configureMaterialView()
+        
+        self.materialView.center = previousCenter
+        self.materialBackgroundView.layer.frame = self.bounds
+        self.materialBackgroundView.layer.mask = materialShapeLayer
+    }
+    
     
     private func configureMaterialView() {
         let materialEffectBounds: CGFloat = self.bounds.width * materialEffectPercent
@@ -112,10 +124,22 @@ public class WYMaterialButton: UIButton {
     
     public override func cancelTrackingWithEvent(event: UIEvent?) {
         super.cancelTrackingWithEvent(event)
+        self.animationStopped()
     }
     
     public override func endTrackingWithTouch(touch: UITouch?, withEvent event: UIEvent?) {
         super.cancelTrackingWithEvent(event)
+        self.animationStopped()
+    }
+    
+    private func animationStopped() {
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            self.materialBackgroundView.alpha = 1
+            }) { (finished) -> Void in
+                UIView.animateWithDuration(0.6, animations: { () -> Void in
+                    self.materialBackgroundView.alpha = 0
+                })
+        }
     }
     
 }
