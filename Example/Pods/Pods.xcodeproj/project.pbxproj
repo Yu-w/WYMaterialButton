@@ -17,6 +17,10 @@
 		88E6DAC31BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */; settings = {ASSET_TAGS = (); }; };
 		88E6DAC41BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */; settings = {ASSET_TAGS = (); }; };
 		88E6DAC51BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAC71BB4FF6800FFA05B /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC61BB4FF6800FFA05B /* Spring.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAC91BB4FF7000FFA05B /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC81BB4FF7000FFA05B /* SpringButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DACB1BB4FF8C00FFA05B /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACA1BB4FF8C00FFA05B /* DesignableButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DACD1BB4FF9800FFA05B /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACC1BB4FF9800FFA05B /* SpringAnimation.swift */; settings = {ASSET_TAGS = (); }; };
 		94F1321B531C201DF1FBD04BA1D6AF6A /* WYMaterialButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AF083F6E2A10534732E7EF00A704878 /* WYMaterialButton.bundle */; };
 		CB99A2ED83AE1092347C26B0837860A3 /* WYMaterialButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4971A94C740600024ED39F10688582 /* WYMaterialButton-dummy.m */; };
 		F62E8E8760560D5D209B938EB70299DF /* Pods-WYMaterialButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FCB46F38DA7251453750BA68A183DD /* Pods-WYMaterialButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,6 +73,10 @@
 		811AE3A347F0FF13D0DAD9B909BF4BC1 /* Pods-WYMaterialButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYMaterialButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		831E73430F13747EADFB5D84A1B1AEB0 /* Pods-WYMaterialButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WYMaterialButton_Tests.modulemap"; sourceTree = "<group>"; };
 		88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYMaterialButton.swift; sourceTree = "<group>"; };
+		88E6DAC61BB4FF6800FFA05B /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		88E6DAC81BB4FF7000FFA05B /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		88E6DACA1BB4FF8C00FFA05B /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		88E6DACC1BB4FF9800FFA05B /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
 		8E74C3AAB6EBB8621915AEF306744897 /* WYMaterialButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WYMaterialButton-Private.xcconfig"; sourceTree = "<group>"; };
 		93BCCECCC6476BCEEC7C0336FF8B3399 /* WYMaterialButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYMaterialButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A97FFC469786B4B0CD8128D19BF071 /* Pods-WYMaterialButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYMaterialButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -235,6 +243,10 @@
 			isa = PBXGroup;
 			children = (
 				88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */,
+				88E6DACA1BB4FF8C00FFA05B /* DesignableButton.swift */,
+				88E6DAC81BB4FF7000FFA05B /* SpringButton.swift */,
+				88E6DACC1BB4FF9800FFA05B /* SpringAnimation.swift */,
+				88E6DAC61BB4FF6800FFA05B /* Spring.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -404,8 +416,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E6DAC91BB4FF7000FFA05B /* SpringButton.swift in Sources */,
 				88E6DAC31BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */,
 				67053566E56438C86D58492402ABB361 /* Pods-WYMaterialButton_Example-dummy.m in Sources */,
+				88E6DACD1BB4FF9800FFA05B /* SpringAnimation.swift in Sources */,
+				88E6DACB1BB4FF8C00FFA05B /* DesignableButton.swift in Sources */,
+				88E6DAC71BB4FF6800FFA05B /* Spring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
