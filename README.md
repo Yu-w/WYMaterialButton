@@ -4,11 +4,11 @@
 [![License](https://img.shields.io/cocoapods/l/WYMaterialButton.svg?style=flat)](http://cocoapods.org/pods/WYMaterialButton)
 [![Platform](https://img.shields.io/cocoapods/p/WYMaterialButton.svg?style=flat)](http://cocoapods.org/pods/WYMaterialButton)
 
-#### WYMaterialButton written purely in Swift 2, inspired by Google Material Design. 
+#### Inspired by Google Material Design, written purely in Swift 2.0. 
 
 WYMaterialButton implemented Material Design on iOS, allowing iOS buttons to be more responsive and interactive.
 
-Integraded with Spring animations, WYMaterialButton is super animated and programmer-friendly. All settings support and can be done in storyboard inspector.
+Integrated with Spring animations, WYMaterialButton is super animated and programmer-friendly. All settings can be customized in storyboard inspector.
 
 
 <img src="./Screenshot/animation.gif" width="375" height="667"/>
