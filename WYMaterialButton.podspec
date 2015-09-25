@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "WYMaterialButton"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of WYMaterialButton."
+  s.version          = "0.2.0"
+  s.summary          = "Material Design for iOS button with fullly interactive animations on storyboard, integrated Spring animations."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
