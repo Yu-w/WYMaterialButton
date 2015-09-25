@@ -9,33 +9,35 @@
 /* Begin PBXBuildFile section */
 		11C6F686CD5E6249D29AD1FAA821B381 /* Pods-WYMaterialButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E056564B413B5ABB296F62FA92DD324 /* Pods-WYMaterialButton_Tests-dummy.m */; };
 		138A40470CF9BDCA5D5177A8BC3C46EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D383E9CEB4779E567A9B5070AE8DCE0D /* Foundation.framework */; };
-		177973DC978C83E83520872BB617D8DA /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB95DB907EA7FA71DAF3C38D1188E3D /* ReplaceMe.swift */; };
 		35E271B031CE4137CD220A4D35BA9421 /* WYMaterialButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 079067F7654C19849FEE4AB786CFFB33 /* WYMaterialButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C3E226FACDA1C0977D388F59138FE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D383E9CEB4779E567A9B5070AE8DCE0D /* Foundation.framework */; };
 		56B4DC3D89766B86A5BCEDE98F2436DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D383E9CEB4779E567A9B5070AE8DCE0D /* Foundation.framework */; };
 		67053566E56438C86D58492402ABB361 /* Pods-WYMaterialButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31515DEFFEBD4B43B91FA32C4B3AD337 /* Pods-WYMaterialButton_Example-dummy.m */; };
 		79E6E38282942749EEBE6577496B9C27 /* Pods-WYMaterialButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD66B12BCB0B3B2ECCC91237E797DA99 /* Pods-WYMaterialButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88E6DAC31BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAC41BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAC51BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */; settings = {ASSET_TAGS = (); }; };
 		94F1321B531C201DF1FBD04BA1D6AF6A /* WYMaterialButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AF083F6E2A10534732E7EF00A704878 /* WYMaterialButton.bundle */; };
 		CB99A2ED83AE1092347C26B0837860A3 /* WYMaterialButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4971A94C740600024ED39F10688582 /* WYMaterialButton-dummy.m */; };
 		F62E8E8760560D5D209B938EB70299DF /* Pods-WYMaterialButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FCB46F38DA7251453750BA68A183DD /* Pods-WYMaterialButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0281DB5590C8C163BCBAB9EDB856CD34 /* PBXContainerItemProxy */ = {
+		828E37B56D51CB862952F2D552E95EBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3C1BD30AD7A1769E51E347FAE951C2B6;
 			remoteInfo = WYMaterialButton;
 		};
-		231C47F6472763EE67181FEAA77CE258 /* PBXContainerItemProxy */ = {
+		969AD48987D66E7381CE2D06B33899BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C97E2E820A1719333BB067EC4819AD16;
 			remoteInfo = "WYMaterialButton-WYMaterialButton";
 		};
-		CBFD6BAB84F31E2E85F04B1D882C44C6 /* PBXContainerItemProxy */ = {
+		D2801C23F1791D9F3974B6DF71533416 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -66,6 +68,8 @@
 		7E3D3D7B50E4EB08316614418B49C730 /* Pods-WYMaterialButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WYMaterialButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		811AE3A347F0FF13D0DAD9B909BF4BC1 /* Pods-WYMaterialButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYMaterialButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		831E73430F13747EADFB5D84A1B1AEB0 /* Pods-WYMaterialButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WYMaterialButton_Tests.modulemap"; sourceTree = "<group>"; };
+		88E6DAC11BB4DE9500FFA05B /* WYMaterialButton-WYMaterialButton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYMaterialButton-WYMaterialButton-Bridging-Header.h"; sourceTree = "<group>"; };
+		88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYMaterialButton.swift; sourceTree = "<group>"; };
 		8E74C3AAB6EBB8621915AEF306744897 /* WYMaterialButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WYMaterialButton-Private.xcconfig"; sourceTree = "<group>"; };
 		93BCCECCC6476BCEEC7C0336FF8B3399 /* WYMaterialButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYMaterialButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A97FFC469786B4B0CD8128D19BF071 /* Pods-WYMaterialButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYMaterialButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -77,7 +81,6 @@
 		C61B2410B0F0DE4B497A25FF9D9379A4 /* Pods-WYMaterialButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WYMaterialButton_Example-resources.sh"; sourceTree = "<group>"; };
 		D383E9CEB4779E567A9B5070AE8DCE0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DD66B12BCB0B3B2ECCC91237E797DA99 /* Pods-WYMaterialButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WYMaterialButton_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DDB95DB907EA7FA71DAF3C38D1188E3D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		E5033595D67FBC4AD9041E3F6C316BC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,7 +235,8 @@
 		C99C85E39C26BDAF6642C3E313097D1E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DDB95DB907EA7FA71DAF3C38D1188E3D /* ReplaceMe.swift */,
+				88E6DAC21BB4DE9500FFA05B /* WYMaterialButton.swift */,
+				88E6DAC11BB4DE9500FFA05B /* WYMaterialButton-WYMaterialButton-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -289,7 +293,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				709082B7FFC014E25F6FB322F31F7FDE /* PBXTargetDependency */,
+				3CF5F377D0DE9E7884FAD9D8EC56F534 /* PBXTargetDependency */,
 			);
 			name = "Pods-WYMaterialButton_Example";
 			productName = "Pods-WYMaterialButton_Example";
@@ -308,7 +312,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6437162B5E0F28D0144DE031B7987B4F /* PBXTargetDependency */,
+				2A0692F11D995390B7BF65094F8C86EC /* PBXTargetDependency */,
 			);
 			name = WYMaterialButton;
 			productName = WYMaterialButton;
@@ -326,7 +330,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				ABF4A92CEE20148967FEAA43BA996976 /* PBXTargetDependency */,
+				4BDCCAC4F7076F15943214BA6EC9DF98 /* PBXTargetDependency */,
 			);
 			name = "Pods-WYMaterialButton_Tests";
 			productName = "Pods-WYMaterialButton_Tests";
@@ -402,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E6DAC31BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */,
 				67053566E56438C86D58492402ABB361 /* Pods-WYMaterialButton_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177973DC978C83E83520872BB617D8DA /* ReplaceMe.swift in Sources */,
+				88E6DAC41BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */,
 				CB99A2ED83AE1092347C26B0837860A3 /* WYMaterialButton-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,29 +432,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E6DAC51BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6437162B5E0F28D0144DE031B7987B4F /* PBXTargetDependency */ = {
+		2A0692F11D995390B7BF65094F8C86EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "WYMaterialButton-WYMaterialButton";
 			target = C97E2E820A1719333BB067EC4819AD16 /* WYMaterialButton-WYMaterialButton */;
-			targetProxy = 231C47F6472763EE67181FEAA77CE258 /* PBXContainerItemProxy */;
+			targetProxy = 969AD48987D66E7381CE2D06B33899BD /* PBXContainerItemProxy */;
 		};
-		709082B7FFC014E25F6FB322F31F7FDE /* PBXTargetDependency */ = {
+		3CF5F377D0DE9E7884FAD9D8EC56F534 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WYMaterialButton;
 			target = 3C1BD30AD7A1769E51E347FAE951C2B6 /* WYMaterialButton */;
-			targetProxy = CBFD6BAB84F31E2E85F04B1D882C44C6 /* PBXContainerItemProxy */;
+			targetProxy = 828E37B56D51CB862952F2D552E95EBD /* PBXContainerItemProxy */;
 		};
-		ABF4A92CEE20148967FEAA43BA996976 /* PBXTargetDependency */ = {
+		4BDCCAC4F7076F15943214BA6EC9DF98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WYMaterialButton;
 			target = 3C1BD30AD7A1769E51E347FAE951C2B6 /* WYMaterialButton */;
-			targetProxy = 0281DB5590C8C163BCBAB9EDB856CD34 /* PBXContainerItemProxy */;
+			targetProxy = D2801C23F1791D9F3974B6DF71533416 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -586,10 +592,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E74C3AAB6EBB8621915AEF306744897 /* WYMaterialButton-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = WYMaterialButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "../../Pod/Classes/WYMaterialButton-WYMaterialButton-Bridging-Header.h";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -598,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA470BA37DAF684903A362F9D5D8AFC /* Pods-WYMaterialButton_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -687,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68A17477FA722CF0BFC49470CEA84DA7 /* Pods-WYMaterialButton_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -716,10 +727,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E74C3AAB6EBB8621915AEF306744897 /* WYMaterialButton-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = WYMaterialButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "../../Pod/Classes/WYMaterialButton-WYMaterialButton-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;

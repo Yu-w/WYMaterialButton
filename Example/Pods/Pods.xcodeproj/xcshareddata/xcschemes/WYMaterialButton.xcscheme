@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A2B8D4E46C63799CF8E401AD"
+               BlueprintIdentifier = "8FB57BDD10EDE34C69FBAC0C"
                BuildableName = "WYMaterialButton.framework"
                BlueprintName = "WYMaterialButton"
                ReferencedContainer = "container:Pods.xcodeproj">
