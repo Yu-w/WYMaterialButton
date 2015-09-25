@@ -68,5 +68,9 @@ open WYMaterialButton.xcworkspace
 * Xcode 6
 * iOS 7
 
+## Credits
+[Spring](https://github.com/MengTo/Spring): subclass [@Mengto](https://twitter.com/MengTo)'s Spring framework for supporting additional animations and quick settings in the button.
+[Material Design](https://www.google.com/design/spec/material-design/introduction.html): animation idea and effects come from Google's material design concept.
+
 ## LICENSE
 WYMaterialButton is available under the [MIT License](LICENSE), see LICENSE for more infomation.
