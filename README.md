@@ -8,7 +8,7 @@
 
 WYMaterialButton implemented Material Design on iOS, allowing iOS buttons to be more responsive and interactive.
 
-Integrated with Spring animations, WYMaterialButton is super animated and programmer-friendly. All settings can be customized in storyboard inspector.
+Integrated with [Spring](https://github.com/MengTo/Spring) animations, WYMaterialButton is super animated and programmer-friendly. All settings can be customized in storyboard inspector.
 
 
 <img src="./Screenshot/animation.gif" width="375" height="667"/>
