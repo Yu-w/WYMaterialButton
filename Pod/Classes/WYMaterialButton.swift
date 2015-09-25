@@ -74,18 +74,6 @@ public class WYMaterialButton: DesignableButton {
         configure()
     }
     
-    let materialPressedView = UIView()
-    let materialBackgroundView = UIView()
-    
-    private func configure() {
-        self.configureMaterialPressedView()
-        self.configureMaterialBackgroundView()
-        
-        self.layer.shadowRadius = 0
-        self.layer.shadowOffset = CGSize(width: 0, height: 1)
-        self.layer.shadowColor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.5).CGColor
-    }
-    
     public override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -100,7 +88,12 @@ public class WYMaterialButton: DesignableButton {
         self.materialBackgroundView.layer.mask = buttonMask
     }
     
+    private func configure() {
+        self.configureMaterialPressedView()
+        self.configureMaterialBackgroundView()
+    }
     
+    let materialPressedView = UIView()
     private func configureMaterialPressedView() {
         let materialEffectBounds: CGFloat = self.bounds.width * materialEffectPercent
         self.materialPressedView.frame = CGRectMake(CGRectGetMidX(self.bounds) - materialEffectBounds/2, CGRectGetMidY(self.bounds) - materialEffectBounds/2, materialEffectBounds, materialEffectBounds)
@@ -108,6 +101,7 @@ public class WYMaterialButton: DesignableButton {
         self.materialPressedView.layer.cornerRadius = materialEffectBounds/2
     }
     
+    let materialBackgroundView = UIView()
     private func configureMaterialBackgroundView() {
         self.materialBackgroundView.backgroundColor = self.materialBackgroundColor
         self.materialBackgroundView.frame = self.bounds

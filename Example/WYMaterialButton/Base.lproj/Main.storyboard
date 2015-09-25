@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -110,14 +111,29 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTy-Ij-g7C" customClass="WYMaterialButton" customModule="Pods_WYMaterialButton_Example">
+                                <rect key="frame" x="32" y="32" width="180" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="I7G-B8-TCb"/>
+                                    <constraint firstAttribute="height" constant="44" id="Iml-ap-Vmf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="materialBackgroundColor">
+                                        <color key="value" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="DTy-Ij-g7C" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="0cG-ib-BzS"/>
                             <constraint firstItem="dVW-EU-fLN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2lk-qi-ISl"/>
                             <constraint firstItem="qRD-Bc-K2O" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="IGF-O9-ONR"/>
                             <constraint firstItem="dVW-EU-fLN" firstAttribute="top" secondItem="qRD-Bc-K2O" secondAttribute="bottom" constant="32" id="LHN-ex-zzl"/>
                             <constraint firstItem="dVW-EU-fLN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="188" id="PNp-Wr-fOG"/>
                             <constraint firstItem="dVW-EU-fLN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="lDh-1W-LTV"/>
+                            <constraint firstItem="DTy-Ij-g7C" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="zCs-7w-3Ix"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
