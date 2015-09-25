@@ -81,7 +81,7 @@ open WYMaterialButton.xcworkspace
 * Under Xcode, press ``Ctrl + R``
 
 ## Requirements
-* Xcode 6
+* Xcode 7
 * iOS 7
 
 ## Credits
