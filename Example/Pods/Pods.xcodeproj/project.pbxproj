@@ -21,6 +21,14 @@
 		88E6DAC91BB4FF7000FFA05B /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC81BB4FF7000FFA05B /* SpringButton.swift */; settings = {ASSET_TAGS = (); }; };
 		88E6DACB1BB4FF8C00FFA05B /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACA1BB4FF8C00FFA05B /* DesignableButton.swift */; settings = {ASSET_TAGS = (); }; };
 		88E6DACD1BB4FF9800FFA05B /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACC1BB4FF9800FFA05B /* SpringAnimation.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DACE1BB5035C00FFA05B /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACA1BB4FF8C00FFA05B /* DesignableButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DACF1BB5035D00FFA05B /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACA1BB4FF8C00FFA05B /* DesignableButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAD01BB5035F00FFA05B /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC81BB4FF7000FFA05B /* SpringButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAD11BB5036000FFA05B /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC81BB4FF7000FFA05B /* SpringButton.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAD21BB5036300FFA05B /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACC1BB4FF9800FFA05B /* SpringAnimation.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAD31BB5036400FFA05B /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DACC1BB4FF9800FFA05B /* SpringAnimation.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAD41BB5036700FFA05B /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC61BB4FF6800FFA05B /* Spring.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAD51BB5036700FFA05B /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DAC61BB4FF6800FFA05B /* Spring.swift */; settings = {ASSET_TAGS = (); }; };
 		94F1321B531C201DF1FBD04BA1D6AF6A /* WYMaterialButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AF083F6E2A10534732E7EF00A704878 /* WYMaterialButton.bundle */; };
 		CB99A2ED83AE1092347C26B0837860A3 /* WYMaterialButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4971A94C740600024ED39F10688582 /* WYMaterialButton-dummy.m */; };
 		F62E8E8760560D5D209B938EB70299DF /* Pods-WYMaterialButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FCB46F38DA7251453750BA68A183DD /* Pods-WYMaterialButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -429,8 +437,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E6DAD01BB5035F00FFA05B /* SpringButton.swift in Sources */,
 				88E6DAC41BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */,
+				88E6DAD41BB5036700FFA05B /* Spring.swift in Sources */,
+				88E6DAD21BB5036300FFA05B /* SpringAnimation.swift in Sources */,
 				CB99A2ED83AE1092347C26B0837860A3 /* WYMaterialButton-dummy.m in Sources */,
+				88E6DACE1BB5035C00FFA05B /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +459,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E6DAC51BB4DE9500FFA05B /* WYMaterialButton.swift in Sources */,
+				88E6DAD51BB5036700FFA05B /* Spring.swift in Sources */,
+				88E6DACF1BB5035D00FFA05B /* DesignableButton.swift in Sources */,
+				88E6DAD11BB5036000FFA05B /* SpringButton.swift in Sources */,
+				88E6DAD31BB5036400FFA05B /* SpringAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
