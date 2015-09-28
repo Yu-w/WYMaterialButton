@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/WYMaterialButton.svg?style=flat)](http://cocoapods.org/pods/WYMaterialButton)
 [![Platform](https://img.shields.io/cocoapods/p/WYMaterialButton.svg?style=flat)](http://cocoapods.org/pods/WYMaterialButton)
 
-#### Inspired by Google Material Design, written purely in Swift 2.0. 
+#### Inspired by Google Material Design, written purely in Swift 2.1. 
 
 WYMaterialButton implemented Material Design on iOS, allowing iOS buttons to be more responsive and interactive.
 
