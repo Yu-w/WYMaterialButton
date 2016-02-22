@@ -53,8 +53,6 @@ If you're Objective-C user, please include the header file
 ## Specification
 * For most cases, ``Material Color`` is the only property you need to set. Leave others as default.
 
-* With ``Auto Setup Color`` enabled defautly, WYMaterialButton would set background of the button same as the ''materialColor'', and set the text color to corresponding contrast color for maximing convenience for developers. If you wish the highest customization, just disable ``Auto Setup Color`` and set up the button as usual and won't hurt material effects.
-
 * With ``Touch Location Enable`` enabled defautly, WYMaterialButton would track your touch location and generate a ripple animation upon that. You can disable to center the ripple effect on the button.
 
 * ``Material Effect Percent`` speicifies what percentage of area of the button will have material effect when being pressing. It default to 0.8.
