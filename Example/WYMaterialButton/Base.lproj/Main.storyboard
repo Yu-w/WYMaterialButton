@@ -18,11 +18,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVW-EU-fLN">
-                                <rect key="frame" x="210" y="244" width="180" height="112"/>
+                                <rect key="frame" x="210" y="210" width="180" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP3-mg-55q" customClass="WYMaterialButton" customModule="Pods_WYMaterialButton_Example">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="44"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="0eP-oY-dOa"/>
                                             <constraint firstAttribute="height" constant="44" id="90h-Vz-0Y7"/>
                                             <constraint firstAttribute="width" constant="180" id="scr-zq-QMl"/>
                                         </constraints>
@@ -58,6 +59,11 @@
                                                 <color key="value" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="90h-Vz-0Y7"/>
+                                            </mask>
+                                        </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-lv-P8q" customClass="WYMaterialButton" customModule="Pods_WYMaterialButton_Example">
                                         <rect key="frame" x="0.0" y="68" width="180" height="44"/>
@@ -94,22 +100,77 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azP-Fj-CE0" customClass="WYMaterialButton" customModule="Pods_WYMaterialButton_Example">
+                                        <rect key="frame" x="0.0" y="136" width="180" height="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="y">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="leading" secondItem="dVW-EU-fLN" secondAttribute="leading" id="2EN-cT-EVA"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="top" secondItem="mxT-lv-P8q" secondAttribute="bottom" constant="24" id="4eo-6g-Nbs"/>
                                     <constraint firstAttribute="bottom" secondItem="mxT-lv-P8q" secondAttribute="bottom" id="62o-Y3-pdu"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="top" secondItem="mxT-lv-P8q" secondAttribute="bottom" constant="24" id="9E7-hS-iJ5"/>
                                     <constraint firstItem="xP3-mg-55q" firstAttribute="leading" secondItem="dVW-EU-fLN" secondAttribute="leading" id="DgA-ef-eLm"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="width" secondItem="xP3-mg-55q" secondAttribute="width" id="F6u-ZN-gvm"/>
+                                    <constraint firstAttribute="bottom" secondItem="azP-Fj-CE0" secondAttribute="bottom" id="Frb-nC-v8M"/>
                                     <constraint firstItem="mxT-lv-P8q" firstAttribute="height" secondItem="xP3-mg-55q" secondAttribute="height" id="HXI-mD-34Q"/>
                                     <constraint firstItem="xP3-mg-55q" firstAttribute="top" secondItem="dVW-EU-fLN" secondAttribute="top" id="MAR-qA-yDD"/>
                                     <constraint firstItem="mxT-lv-P8q" firstAttribute="leading" secondItem="dVW-EU-fLN" secondAttribute="leading" id="Oxr-l8-Xiv"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="width" secondItem="mxT-lv-P8q" secondAttribute="width" id="XT8-is-Yon"/>
                                     <constraint firstItem="mxT-lv-P8q" firstAttribute="top" secondItem="xP3-mg-55q" secondAttribute="bottom" constant="24" id="YhV-Nf-fAJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="azP-Fj-CE0" secondAttribute="trailing" id="cuz-wE-8p4"/>
+                                    <constraint firstAttribute="trailing" secondItem="azP-Fj-CE0" secondAttribute="trailing" id="e3R-cb-hTb"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="top" secondItem="mxT-lv-P8q" secondAttribute="bottom" constant="24" id="g34-wa-XPQ"/>
                                     <constraint firstItem="mxT-lv-P8q" firstAttribute="width" secondItem="xP3-mg-55q" secondAttribute="width" id="hlN-11-mZA"/>
                                     <constraint firstAttribute="trailing" secondItem="mxT-lv-P8q" secondAttribute="trailing" id="jav-Hs-k86"/>
+                                    <constraint firstAttribute="bottom" secondItem="azP-Fj-CE0" secondAttribute="bottom" id="l0A-kP-z0o"/>
                                     <constraint firstAttribute="trailing" secondItem="xP3-mg-55q" secondAttribute="trailing" id="nIy-5O-cAp"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="leading" secondItem="dVW-EU-fLN" secondAttribute="leading" id="nV0-VK-sGB"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="height" secondItem="mxT-lv-P8q" secondAttribute="height" id="vQL-5n-Mb0"/>
+                                    <constraint firstItem="azP-Fj-CE0" firstAttribute="height" secondItem="xP3-mg-55q" secondAttribute="height" id="yGh-rf-Ozr"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="62o-Y3-pdu"/>
+                                        <exclude reference="4eo-6g-Nbs"/>
+                                        <exclude reference="F6u-ZN-gvm"/>
+                                        <exclude reference="g34-wa-XPQ"/>
+                                        <exclude reference="l0A-kP-z0o"/>
+                                        <exclude reference="yGh-rf-Ozr"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WYMaterialButton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRD-Bc-K2O">
-                                <rect key="frame" x="220" y="190" width="160" height="22"/>
+                                <rect key="frame" x="220" y="156" width="159.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

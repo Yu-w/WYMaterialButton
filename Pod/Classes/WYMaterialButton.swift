@@ -14,7 +14,8 @@ let presetMaterialColor = UIColor(red:0.93, green:0.94, blue:0.95, alpha:1)
 @IBDesignable
 public class WYMaterialButton: DesignableButton {
 
-    private let animationDuration = 0.75
+    public var animationDuration = 0.6
+    public var pulseDuration = 0.2
     
     @IBInspectable
     public var materialColor: UIColor = UIColor.clearColor() {
@@ -32,6 +33,8 @@ public class WYMaterialButton: DesignableButton {
         }
     }
 
+    @IBInspectable
+    public var pulseEnable: Bool = true
     @IBInspectable
     public var touchLocationEnable: Bool = true
     @IBInspectable
@@ -104,32 +107,50 @@ public class WYMaterialButton: DesignableButton {
         self.materialBackgroundView.layer.addSublayer(self.materialPressedView.layer)
     }
     
+
     public override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
         self.materialBackgroundView.alpha = 1
         self.materialPressedView.center = touch.locationInView(self)
-        self.materialPressedView.transform = CGAffineTransformMakeScale(0.5, 0.5)
+        self.materialPressedView.transform = CGAffineTransformMakeScale(0.6, 0.6)
+
         
-        UIView.animateWithDuration(animationDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
-                self.materialPressedView.center = self.materialBackgroundView.center
-                self.materialPressedView.transform = CGAffineTransformIdentity
-            }, completion: nil)
+        UIView.animateWithDuration(animationDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction, .AllowAnimatedContent], animations: {
+            self.materialPressedView.center = self.materialBackgroundView.center
+            self.materialPressedView.transform = CGAffineTransformIdentity
+        }, completion: nil)
+        
+        if pulseEnable {
+            UIView.animateWithDuration(pulseDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction, .AllowAnimatedContent], animations: {
+                self.transform = CGAffineTransformMakeScale(1.05, 1.05)
+                }, completion: { _ in
+                    UIView.animateWithDuration(self.pulseDuration, delay: 0, options: [.CurveEaseIn , .AllowUserInteraction, .AllowAnimatedContent], animations: {
+                        self.transform = CGAffineTransformIdentity
+                    }, completion: nil)
+            })
+        }
         
         return super.beginTrackingWithTouch(touch, withEvent: event)
     }
     
     public override func cancelTrackingWithEvent(event: UIEvent?) {
         super.cancelTrackingWithEvent(event)
-        self.materialBackgroundView.alpha = 1
-        UIView.animateWithDuration(animationDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
-            self.materialBackgroundView.alpha = 0
+        UIView.animateWithDuration(0.1, delay: 0, options: [.AllowUserInteraction, .AllowAnimatedContent], animations: {
+            self.materialBackgroundView.alpha = 1
+        }) { _ in
+            UIView.animateWithDuration(self.animationDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
+                self.materialBackgroundView.alpha = 0
             }, completion: nil)
+        }
     }
     
     public override func endTrackingWithTouch(touch: UITouch?, withEvent event: UIEvent?) {
         super.endTrackingWithTouch(touch, withEvent: event)
-        self.materialBackgroundView.alpha = 1
-        UIView.animateWithDuration(animationDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
-            self.materialBackgroundView.alpha = 0
+        UIView.animateWithDuration(0.1, delay: 0, options: [.AllowUserInteraction, .AllowAnimatedContent], animations: {
+            self.materialBackgroundView.alpha = 1
+        }) { _ in
+            UIView.animateWithDuration(self.animationDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
+                self.materialBackgroundView.alpha = 0
             }, completion: nil)
+        }
     }
 }
