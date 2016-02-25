@@ -84,10 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-WYMaterialButton_Example/WYMaterialButton.framework"
-  install_framework "Pods-WYMaterialButton_Example/pop.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/WYMaterialButton/WYMaterialButton.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/pop/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-WYMaterialButton_Example/WYMaterialButton.framework"
-  install_framework "Pods-WYMaterialButton_Example/pop.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/WYMaterialButton/WYMaterialButton.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/pop/pop.framework"
 fi
