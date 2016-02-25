@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import WYMaterialButton
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var blueButton: WYMaterialButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        blueButton.addTarget(self, action: "buttonClicked", forControlEvents: .TouchUpInside)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func buttonClicked() {
+        print("Thanks for playing the demo, plz give a star if you like!")
     }
+    
 }
 
