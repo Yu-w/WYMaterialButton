@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WYMaterialButton"
-  s.version          = "1.2.0"
+  s.version          = "1.2.1"
   s.summary          = "Interactive and fully animated Material Design button for iOS developers."
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
             WYMaterialButton implemented Material Design on iOS, allowing iOS buttons to be more responsive and interactive.
-            Integrated with Spring animations, WYMaterialButton is super animated and programmer-friendly. All settings can be customized in storyboard inspector.
+            Integrated with Spring and pop animations, WYMaterialButton is super animated and programmer-friendly. All settings can be customized in storyboard inspector.
                    DESC
 
   s.homepage         = "https://github.com/yuwang17/WYMaterialButton"
@@ -37,7 +37,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'pop'
-  # s.dependency 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+  s.frameworks = 'UIKit'
+  s.dependency 'pop', '~> 1.0'
 end

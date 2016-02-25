@@ -1,7 +1,7 @@
 PODS:
   - pop (1.0.9)
-  - WYMaterialButton (1.1.0):
-    - pop
+  - WYMaterialButton (1.2.0):
+    - pop (~> 1.0)
 
 DEPENDENCIES:
   - WYMaterialButton (from `../`)
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  WYMaterialButton: 9f4f575ca6300eb27703feec0523ff7bb1ae9b6c
+  WYMaterialButton: eaf1eb997e56deecbada8e7d16f2b26a014ea6cc
 
 COCOAPODS: 0.39.0
