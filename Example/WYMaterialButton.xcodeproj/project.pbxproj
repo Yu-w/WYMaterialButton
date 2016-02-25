@@ -13,8 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		75E301C79813D91011C92591 /* Pods_WYMaterialButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F7528AEAC8696919E5597B /* Pods_WYMaterialButton_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D7285F98D30C9DF1477703AC /* Pods_WYMaterialButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EBCE9A2CF4EAD3D9F67DDB /* Pods_WYMaterialButton_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		75E301C79813D91011C92591 /* Pods_WYMaterialButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F7528AEAC8696919E5597B /* Pods_WYMaterialButton_Tests.framework */; };
+		D7285F98D30C9DF1477703AC /* Pods_WYMaterialButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EBCE9A2CF4EAD3D9F67DDB /* Pods_WYMaterialButton_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

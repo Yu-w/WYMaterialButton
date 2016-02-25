@@ -38,5 +38,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  s.dependency 'pop'
   # s.dependency 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 end

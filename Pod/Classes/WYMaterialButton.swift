@@ -8,6 +8,7 @@
 
 import UIKit
 import QuartzCore
+import pop
 
 let presetMaterialColor = UIColor(red:0.93, green:0.94, blue:0.95, alpha:1)
 
@@ -89,6 +90,32 @@ public class WYMaterialButton: DesignableButton {
         self.configureMaterialPressedView()
         self.configureMaterialBackgroundView()
         self.materialBackgroundView.alpha = 0
+        self.addTarget(self, action: "scaleToSmall", forControlEvents: [.TouchDragEnter, .TouchDown])
+        self.addTarget(self, action: "scaleAnimation", forControlEvents: .TouchUpInside)
+        self.addTarget(self, action: "scaleToDefault", forControlEvents: .TouchDragExit)
+    }
+    
+    func scaleToSmall() {
+        guard pulseEnable else { return }
+        let scaleAnimation = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnimation.toValue = NSValue(CGSize: CGSizeMake(0.95, 0.95))
+        self.layer.pop_addAnimation(scaleAnimation, forKey: "layerScaleSmallAnimation")
+    }
+    
+    func scaleAnimation() {
+        guard pulseEnable else { return }
+        let scaleAnimation = POPSpringAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnimation.velocity = NSValue(CGSize: CGSizeMake(3, 3))
+        scaleAnimation.toValue = NSValue(CGSize: CGSizeMake(1, 1))
+        scaleAnimation.springBounciness = 18.0
+        self.layer.pop_addAnimation(scaleAnimation, forKey: "layerScaleSpringAnimation")
+    }
+    
+    func scaleToDefault() {
+        guard pulseEnable else { return }
+        let scaleAnimation = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnimation.toValue = NSValue(CGSize: CGSizeMake(1, 1))
+        self.layer.pop_addAnimation(scaleAnimation, forKey: "layerScaleDefaultAnimation")
     }
     
     let materialPressedView = UIView()
@@ -118,16 +145,6 @@ public class WYMaterialButton: DesignableButton {
             self.materialPressedView.center = self.materialBackgroundView.center
             self.materialPressedView.transform = CGAffineTransformIdentity
         }, completion: nil)
-        
-        if pulseEnable {
-            UIView.animateWithDuration(pulseDuration, delay: 0, options: [.CurveEaseOut, .AllowUserInteraction, .AllowAnimatedContent], animations: {
-                self.transform = CGAffineTransformMakeScale(1.05, 1.05)
-                }, completion: { _ in
-                    UIView.animateWithDuration(self.pulseDuration, delay: 0, options: [.CurveEaseIn , .AllowUserInteraction, .AllowAnimatedContent], animations: {
-                        self.transform = CGAffineTransformIdentity
-                    }, completion: nil)
-            })
-        }
         
         return super.beginTrackingWithTouch(touch, withEvent: event)
     }
