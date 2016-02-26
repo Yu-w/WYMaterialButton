@@ -6,7 +6,7 @@
 
 #### Inspired by Google Material Design, written purely in Swift 2.*. 
 
-WYMaterialButton implemented Material Design on iOS, allowing iOS buttons to be more responsive and interactive.
+WYMaterialButton implemented Material Design on iOS and add more dynamic motions, allowing iOS buttons to be more responsive and interactive.
 
 Integrated with [Spring](https://github.com/MengTo/Spring) animations and enhanced by Facebook's [POP](https://github.com/facebook/pop), WYMaterialButton is super animated and programmer-friendly. All settings can be customized in storyboard inspector.
 
