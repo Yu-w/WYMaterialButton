@@ -1,8 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'WYMaterialButton_Example' do 
-  pod "WYMaterialButton", :path => "../"
+target 'WYMaterialButton_Example' do
+    pod "WYMaterialButton", :path => "../"
 end
 
 post_install do |installer|
