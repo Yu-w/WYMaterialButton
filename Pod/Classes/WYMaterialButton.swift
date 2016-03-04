@@ -10,7 +10,7 @@ import UIKit
 import QuartzCore
 import pop
 
-let presetMaterialColor = UIColor(red:0.93, green:0.94, blue:0.95, alpha:1)
+let presetMaterialColor = UIColor(red:0.93, green:0.94, blue:0.95, alpha:0.2)
 
 @IBDesignable
 public class WYMaterialButton: DesignableButton {
