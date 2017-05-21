@@ -22,45 +22,45 @@
 
 import UIKit
 
-@IBDesignable public class DesignableButton: SpringButton {
+@IBDesignable open class DesignableButton: SpringButton {
 
-    @IBInspectable public var borderColor: UIColor = UIColor.clearColor() {
+    @IBInspectable open var borderColor: UIColor = UIColor.clear {
         didSet {
-            layer.borderColor = borderColor.CGColor
+            layer.borderColor = borderColor.cgColor
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0 {
+    @IBInspectable open var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
     
-    @IBInspectable public var cornerRadius: CGFloat = 0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
         }
     }
     
-    @IBInspectable public var shadowColor: UIColor = UIColor.clearColor() {
+    @IBInspectable open var shadowColor: UIColor = UIColor.clear {
         didSet {
-            layer.shadowColor = shadowColor.CGColor
+            layer.shadowColor = shadowColor.cgColor
         }
     }
     
-    @IBInspectable public var shadowRadius: CGFloat = 0 {
+    @IBInspectable open var shadowRadius: CGFloat = 0 {
         didSet {
             layer.shadowRadius = shadowRadius
         }
     }
     
-    @IBInspectable public var shadowOpacity: CGFloat = 0 {
+    @IBInspectable open var shadowOpacity: CGFloat = 0 {
         didSet {
             layer.shadowOpacity = Float(shadowOpacity)
         }
     }
     
-    @IBInspectable public var shadowOffsetY: CGFloat = 0 {
+    @IBInspectable open var shadowOffsetY: CGFloat = 0 {
         didSet {
             layer.shadowOffset.height = shadowOffsetY
         }
