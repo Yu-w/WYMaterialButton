@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/WYMaterialButton.svg?style=flat)](http://cocoapods.org/pods/WYMaterialButton)
 [![Platform](https://img.shields.io/cocoapods/p/WYMaterialButton.svg?style=flat)](http://cocoapods.org/pods/WYMaterialButton)
 
-#### Inspired by Google Material Design, written purely in Swift 2.*. 
+#### Inspired by Google Material Design, written purely in Swift 3. 
 
 WYMaterialButton implemented Material Design on iOS and add more dynamic motions, allowing iOS buttons to be more responsive and interactive.
 
@@ -68,7 +68,7 @@ c
 
 * You can of course access all these properties and more by using codes. For example:
   ```swift
-  myButton.materialColor = UIColor.blueColor()
+  myButton.materialColor = .blue
   ```
 
 
