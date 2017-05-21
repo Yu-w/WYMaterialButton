@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        blueButton.addTarget(self, action: "buttonClicked", for: .touchUpInside)
+        blueButton.addTarget(self, action: #selector(ViewController.buttonClicked), for: .touchUpInside)
     }
     
     func buttonClicked() {
